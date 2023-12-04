@@ -12,7 +12,7 @@ app.get('/', (request, response) => {
 app.get('/items', (request, response) => {
     response.send(`
         <h1>Status Code: ${response.statusCode}</h1>
-        <h2>Hello Items</h2>
+        <h2>List items</h2>
     `)
 });
 
