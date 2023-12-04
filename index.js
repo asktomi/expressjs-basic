@@ -9,6 +9,13 @@ app.get('/', (request, response) => {
     `)
 });
 
+app.get('/items', (request, response) => {
+    response.send(`
+        <h1>Status Code: ${response.statusCode}</h1>
+        <h2>Hello Items</h2>
+    `)
+});
+
 app.listen(PORT, () => {
     console.log(`App is listening on http://localhost:${PORT}`);
 })
